@@ -55,12 +55,21 @@ mysql -u root <<< "GRANT ALL PRIVILEGES ON $DB_NAME.* TO $DB_USER@localhost;"
 # Aplicamos cambios con un comando flush. Esto evita tener que reiniciar mysql.
 mysql -u root <<< "FLUSH PRIVILEGES;"
 
-# ------------------------------------------------------------------------------ WP - Básico------------------------------------------------------------------------------ 
+# ------------------------------------------------------------------------------ WP - CLI------------------------------------------------------------------------------ 
 
-## Instalación de WP en el servidor LAMP
+## Instalación de WP-CLI en el servidor LAMP
 
 #Comenzamos ubicándonos en el directorio de Apache
 cd /var/www/html
+
+# Descargamos y guardamos el contenido de wp-cli.phar
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
+# Le asignamos permisos de EJECUCION (x) al archivo
+chmod +x wp-cli.phar
+
+# Movemos el archivo y cambiamos el nombre  a wp. A partir de aquí, la terminal debería ayudarnos usando 'wp'
+mv wp-cli.phar /usr/local/bin/wp
 
 # Eliminamos index.html
 rm -rf index.html
@@ -71,6 +80,11 @@ wp core download --path=/var/www/html --locale=es_ES --allow-root
 # Permisos necesarios sobre la carpeta de wordpress
 chown -R www-data:www-data /var/www/html
 
-# Instalamos Wordpress con la configuración. Recordatorio de actualizar la IP en la lista de variables.
-wp core install --url=$IP_PUBLICA --title="IAW Padilla Practica 10" --admin_user=admin --admin_password=admin_password --admin_email=@gmail.com --allow-root
+# Creamos el archivo de configuración de Wordpress. Podemos revisarlo luego con el comando 'wp config get'
+wp config create --dbname=$DB_NAME --dbuser=$DB_USER --dbpass=$DB_PASSWORD --allow-root
 
+# Instalamos Wordpress con la configuración. Recordatorio de actualizar la IP en la lista de variables.
+wp core install --url=$IP_PUBLICA --title="IAW Jose Padilla" --admin_user=admin --admin_password=admin_password --admin_email=@gmail.com --allow-root
+
+# Nos dirigimos a la instalación de wp para poder ejecutar la herramienta cli sin problemas
+cd /var/www/html
