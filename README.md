@@ -5,46 +5,31 @@ Personalización de la instalación de WordPress.
 ------------
 En esta práctica personalizaremos nuestra página de Wordpress con un plugin y un tema personalizado, así como su debida configuración.
 
-**Instalando y configurando un tema: Couture**
+**Consola de administración**
 ------------
-Escogemos este tema como base para una revista con diferentes artículos por su sencillez y la visibilidad de sus artículos. Personalizaremos un poco la apariencia de nuestra página.
-
-![](https://i.imgur.com/JR0Tb3A.png)
-Aquí podemos ver una vista previa del citado Tema. Imagenes grandes y títulos en negrita.
-
-![](https://i.imgur.com/487Duoa.png)
-Instalamos un plugin llamado "Kirki" para poder personalizar este y otros temas.
-
-![](https://i.imgur.com/HBYBicT.png)
-Activamos dicho plugin.
-
-![](https://i.imgur.com/9cyILuV.png)
-Podemos añadir una imagen de logotipo si lo deseamos.
-
-![](https://i.imgur.com/aeiPTy6.png)
-También podemos poner un color o una imagen como fondo de pantalla.
-
-![](https://i.imgur.com/q9pZsnR.png)
-También añadir uno o más widget (Depende del tema) En este caso es un calendario de los últimos artículos publicados.
-
-![](https://i.imgur.com/wMf2Jg6.png)
-Finalmente tenemos vista previa en ordenador, tablet o movil.
-
-**Instalando y configurando un plugin: Rank Math SEO**
+Si hemos realizado la instalación usando un paquete core, debemos entrar con `$ip/wp-login.php` y nuestras credenciales. En este script serán 'admin' y 'admin_password'
+![](https://i.imgur.com/HH5lPv7.png)
+**Instalando y configurando un tema: Newslay**
 ------------
-Hemos escogido un plugin que nos facilitará optimizar nuestro posicionamiento en buscadores a partir de ciertas herramientas.
+Escogemos este tema como base para una revista de ciberseguridad por su sencillez y el esquema de colores. Personalizaremos un poco la apariencia de nuestra página.
 
-![](https://i.imgur.com/4IAV9oT.png)
-Aquí podemos ver el plugin, su valoración... Instalamos y activamos.
+![](https://i.imgur.com/z1s4aMq.png)
+Aquí podemos ver una vista previa de los temas por defecto y el recién instalado tema.
 
-![](https://i.imgur.com/xUDS6Xn.png)
-Instalamos con las opciones mínimas. El propio plugin nos indica que necesitamos más extensiones que las que trae la instalación mínima para aprovechar todas las funciones.
+![](https://i.imgur.com/srfMh3A.png)
+El menú de personalización es amplio. Personalizaremos el contenido.
 
-![](https://i.imgur.com/2ZhRgsK.png)
-Mediante un tutorial vamos introduciendo información sobre nuestro sitio.
+![](https://i.imgur.com/y8dGYRN.png)
+Hemos hecho cambios menores como añadir enlaces a redes sociales y añadir un logotipo. Además, hemos añadido algo de contenido para que los cambios se vean bien y habilitado un widget de calendario.
 
-![](https://i.imgur.com/Bc0VJR2.png)
-Finalmente el plugin está desplegado y realizará un análisis una vez el sitio sea público y lo configuremos.
+
+**Instalando y configurando un plugin: Loginizer**
+------------
+![](https://i.imgur.com/ciRzT1L.png)
+Este plugin proporciona algo de seguridad básica a nuestra página web. Cada 3 intentos de login incorrecto, bloqueará la IP del atacante durante 15 minutos, lo cual hace inviables los ataques por fuerza bruta al tiempo que no supone una molestia tan grande para el administrador olvidadizo.
+
+![](https://i.imgur.com/Y4TzlZt.png)
+Es un plugin con funcionalidad gratuita limitada, pero podemos ver que con los planes premium podríamos configurarle 2FA o cambiar la página de login, entre otras funciones.
 
 **Plugin más populares y su uso**
 ------------
