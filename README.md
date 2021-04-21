@@ -9,9 +9,12 @@ En esta práctica personalizaremos nuestra página de Wordpress con un plugin y 
 ------------
 
 Si hemos realizado la instalación usando un paquete core, debemos entrar con `$ip/wp-login.php` y nuestras credenciales. En este script serán 'admin' y 'admin_password'
+
 ![](https://i.imgur.com/HH5lPv7.png)
+
 **Instalando y configurando un tema: Newslay**
 ------------
+
 Escogemos este tema como base para una revista de ciberseguridad por su sencillez y el esquema de colores. Personalizaremos un poco la apariencia de nuestra página.
 
 ![](https://i.imgur.com/z1s4aMq.png)
@@ -26,6 +29,7 @@ Hemos hecho cambios menores como añadir enlaces a redes sociales y añadir un l
 
 **Instalando y configurando un plugin: Loginizer**
 ------------
+
 ![](https://i.imgur.com/ciRzT1L.png)
 Este plugin proporciona algo de seguridad básica a nuestra página web. Cada 3 intentos de login incorrecto, bloqueará la IP del atacante durante 15 minutos, lo cual hace inviables los ataques por fuerza bruta al tiempo que no supone una molestia tan grande para el administrador olvidadizo.
 
@@ -34,6 +38,7 @@ Es un plugin con funcionalidad gratuita limitada, pero podemos ver que con los p
 
 **Plugin más populares y su uso**
 ------------
+
 1. **Contact Form:** La herramienta de formularios más popular. Incluye filtros antispam y es fácil de editar mediante Markdown.
 2. **Woo Commerce:** Una plataforma que permite pagos mediante tarjetas como Visa o American express e interactua con plataformas como Apple Play o Google Play. Instalarlo es gratis, pero cobra comisión sobre beneficios.
 3. **Ocean Extra:** Un plugin que añade funciones a OceanWP. Trabaja con temas y simplifica su manejo. Actualizado frecuentemente y con gran soporte.
@@ -42,6 +47,7 @@ Es un plugin con funcionalidad gratuita limitada, pero podemos ver que con los p
 
 **Referencias**
 ------------
+
 - Guía original para la práctica.
 https://josejuansanchez.org/iaw/practica-10/index.html
 - Tabla periodica de plugin populares
