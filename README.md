@@ -7,6 +7,7 @@ En esta práctica personalizaremos nuestra página de Wordpress con un plugin y 
 
 **Consola de administración**
 ------------
+
 Si hemos realizado la instalación usando un paquete core, debemos entrar con `$ip/wp-login.php` y nuestras credenciales. En este script serán 'admin' y 'admin_password'
 ![](https://i.imgur.com/HH5lPv7.png)
 **Instalando y configurando un tema: Newslay**
